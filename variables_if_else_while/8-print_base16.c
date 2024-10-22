@@ -12,18 +12,18 @@
 
 int main(void)
 {
-    int i;
-    int ii;
+	int i;
+	int ii;
 
-    for (i = 0; i < 10; i++)
-    {
-        putchar(i + '0');
-    }
-    for (ii = 'a'; ii <= 'f'; ii++)
-    {
-        putchar(ii);
-    }
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+	}
+	for (ii = 'a'; ii <= 'f'; ii++)
+	{
+		putchar(ii);
+	}
 
-    putchar('\n');
-    return (0);
+	putchar('\n');
+	return (0);
 }
