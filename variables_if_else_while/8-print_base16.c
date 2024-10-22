@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - function where the program starts
+* main - function where the program starts.
 * Declare variable i and ii of type int
 * for: initialize i and loop to print digits from 0 to 9
 * 2nd for: initialize ii and loop to print letters from a to f
