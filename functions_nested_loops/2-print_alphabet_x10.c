@@ -9,7 +9,7 @@ void print_alphabet_x10(void)
 {
 	int n = 0;
 
-	while (n < 9)
+	while (n <= 9)
 
 	{
 		print_alphabet();
