@@ -7,7 +7,7 @@
 
 int add(int t, int a)
 {
-    int n;
+	int n;
 
 n = t + a;
 return (n);
