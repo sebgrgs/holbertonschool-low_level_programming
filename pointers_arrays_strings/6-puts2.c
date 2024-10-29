@@ -15,7 +15,6 @@ void puts2(char *str)
 	{
 
 	}
-	a--;
 
 	for (; b < a; b += 2)
 	{
