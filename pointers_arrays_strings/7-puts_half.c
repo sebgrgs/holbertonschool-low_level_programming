@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * 
- * 
+ * puts_half - function that prints the second half of a string
+ * @str: pointer to the string
  */
 
 void puts_half(char *str)
 {
 	int a;
-	
+
 	int c;
 
 	for (; str[a] != '\0'; a++)
@@ -21,12 +21,4 @@ void puts_half(char *str)
 		_putchar(str[c]);
 	}
 	_putchar('\n');
-}
-int main(void)
-{
-    char *str;
-
-    str = "0123456789";
-    puts_half(str);
-    return (0);
 }
