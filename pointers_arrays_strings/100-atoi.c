@@ -1,4 +1,6 @@
 #include "main.h"
+#define INT_MAX 2147483647
+#define INT_MIN -2147483648
 
 /**
  * _atoi - function that converts string into integer
@@ -17,6 +19,11 @@ int _atoi(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
+			if (result > (INT_MAX - (s[i] - '0')) / 10)
+			{
+				return (puiss == 1) ? INT_MAX : INT_MIN;
+			}
+			
 			result = result * 10 + (s[i] - '0');
 			found_digit = 1;
 		}
