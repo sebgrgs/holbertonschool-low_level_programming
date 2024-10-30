@@ -18,15 +18,15 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (s[i] == '-')
-	{
-		signe = -1;
-		i++;
-	}
-	else if (s[i] == '+')
-	{
-		i++;
-	}
+	while (s[i] == '-' || s[i] == '+')
+    {
+        if (s[i] == '-')
+        {
+            signe *= -1;
+        }
+        i++;
+    }
+
 
 	while (s[i] != '\0')
 	{
