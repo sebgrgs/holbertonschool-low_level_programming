@@ -21,9 +21,9 @@ int _atoi(char *s)
 		{
 			if (result > (INT_MAX - (s[i] - '0')) / 10)
 			{
-				return (puiss == 1) ? INT_MAX : INT_MIN;
+				return ((puiss == 1) ? INT_MAX : INT_MIN);
 			}
-			
+
 			result = result * 10 + (s[i] - '0');
 			found_digit = 1;
 		}
