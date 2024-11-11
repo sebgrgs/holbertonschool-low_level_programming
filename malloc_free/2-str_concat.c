@@ -28,8 +28,10 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	for (; s1[len1] != '\0'; len1++)
+		;
 
 	for (; s2[len2] != '\0'; len2++)
+		;
 
 	result = malloc(sizeof(char) * (len1 + len2 + 1));
 
@@ -49,6 +51,5 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	result[i + j] = '\0';
-
 	return (result);
 }
