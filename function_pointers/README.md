@@ -27,7 +27,7 @@ This directory contains examples and exercises related to function pointers in C
 
 ## Files
 
-- [`0-print_name.c`](function_pointers/0-print_name.c): Function that prints a name using a function pointer.
+- [`0-print_name.c`](0-print_name.c): Function that prints a name using a function pointer.
 - [`1-array_iterator.c`](function_pointers/1-array_iterator.c): Function that executes a function given as a parameter on each element of an array.
 - [`2-int_index.c`](function_pointers/2-int_index.c): Function that searches for an integer in an array using a function pointer.
 - [`3-calc.h`](function_pointers/3-calc.h): Header file containing the structure and function prototypes for a simple calculator.
