@@ -17,15 +17,30 @@ This project explores the implementation of variadic functions in C programming.
 * Returns sum of all parameters
 * Returns 0 if n == 0
 
+## Compilation
+```bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-sum_them_all.c -o a
+```
+
 ### `print_numbers`
 * Prototype: `void print_numbers(const char *separator, const unsigned int n, ...)`
 * Prints numbers followed by separator
 * Does not print separator if NULL
 
+## Compilation
+```bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-print_numbers.c -o b
+```
+
 ### `print_strings`
 * Prototype: `void print_strings(const char *separator, const unsigned int n, ...)`
 * Prints strings followed by separator
 * Prints (nil) if string is NULL
+
+## Compilation
+```bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-print_strings.c -o c
+```
 
 ### `print_all`
 * Prototype: `void print_all(const char * const format, ...)`
@@ -34,7 +49,8 @@ This project explores the implementation of variadic functions in C programming.
 
 ## Compilation
 ```bash
-gcc -Wall -Werror -Wextra -pedantic *.c
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-print_all.c -o d
+```
 
 ## Author
 
