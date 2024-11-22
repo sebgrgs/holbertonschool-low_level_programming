@@ -4,11 +4,11 @@
 This project explores the implementation of variadic functions in C programming. Variadic functions are functions that can accept a variable number of arguments, such as printf().
 
 ## Files
-* `variadic_functions.h` - Header file containing function prototypes and structures
-* `0-sum_them_all.c` - Function that returns the sum of all its parameters
-* `1-print_numbers.c` - Function that prints numbers with a separator
-* `2-print_strings.c` - Function that prints strings with a separator
-* `3-print_all.c` - Function that prints anything based on a format string
+* [variadic_functions.h](./variadic_functions.h) - Header file containing function prototypes and structures
+* [0-sum_them_all.c](./0-sum_them_all.c) - Function that returns the sum of all its parameters
+* [1-print_numbers.c](./1-print_numbers.c) - Function that prints numbers with a separator
+* [2-print_strings.c](./2-print_strings.c) - Function that prints strings with a separator
+* [3-print_all.c](./3-print_all.c) - Function that prints anything based on a format string
 
 ## Function Descriptions
 
