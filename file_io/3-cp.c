@@ -1,12 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
+#include "main.h"
 
 /**
- * handle_close - Handles file closing
- * @fd: File descriptor
+ * handle_close - Handles file descriptor closing
+ * @fd: File descriptor to close
  */
+
 void handle_close(int fd)
 {
 	if (close(fd) == -1)
@@ -20,8 +18,9 @@ void handle_close(int fd)
  * main - Copies content from one file to another
  * @ac: Argument count
  * @av: Argument vector
- * Return: 0 on success
+ * Return: 0 on success, various error codes on failure
  */
+
 int main(int ac, char *av[])
 {
 	int fd_from, fd_to;
@@ -46,8 +45,8 @@ int main(int ac, char *av[])
 		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
-	while ((read_bytes = read(fd_from, buffer, 1024)) > 0)
-		if (write(fd_to, buffer, read_bytes) != read_bytes)
+	while ((read_bytes = read(fd_from, buffer, sizeof(buffer))) > 0)
+		if (write(fd_to, buffer, read_bytes) == -1)
 		{
 			handle_close(fd_from);
 			handle_close(fd_to);
